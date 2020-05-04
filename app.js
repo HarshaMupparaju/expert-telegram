@@ -34,7 +34,7 @@ app.post('/shortUrl', async (req,res)=>{
     
 })
 
-app.get('/ShortUrl', async (req, res)=>{
+app.get('/:ShortUrl', async (req, res)=>{
 
   const ShortUrl = await shortUrl.findOne({short: req.params.ShortUrl}) 
   if (ShortUrl== null){
