@@ -3,34 +3,43 @@
     #header
     {
         
-        background-color: aquamarine;
-        height: 150px;
+        
+        height: 60px;
         margin: none;
         width: 100% ;
         box-sizing: content-box !important;
+        background-color: #2F2FA2;
         
-        
+    }
+    hr{
+        border-top: 1px solid #F64C72;
+        border-bottom: none;
+        width: 95%; 
     }
 
     h1{
-        font-size: 50px;
+        font-size: 30px;
         font-weight: bold;
-        text-align: center;
-        margin-top: 45px;
+        text-align: left;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left:110px;
+        color: #F64C72;
     }
     body{
         
         font-family: 'Ubuntu', sans-serif;
         overflow: none !important;
-        
-            background-image : url('\images\background2.jpg');
-    
+        color: white;
+        background-color: #2F2FA2;
+         
     }
 
     #desc{
         font-size: 30px;
         text-align: center;
         box-sizing: content-box !important;
+        
     }
     #form-div
     {
@@ -49,21 +58,29 @@
     {
         
         border-radius: 10px;
-        
+        border: none;
         height:50px;
         font-size: 20px;
         align-items: center;  
-        margin-top: 15px;
+        margin-top: 200px;
         box-sizing: content-box !important;
-        width:350px;    
+        width:350px;
+        border-radius: 30px;
+        padding-left: 30px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
     }
     #div2{
         margin-top: 60px;
     }
+    
+    .material-icons.md-36 { font-size: 36px;
+        margin-top: 10px;
+    }
+    
 
     #submit
     {
-        border-radius: 10px;
+        border-radius: 25px;
         border:none;
         width:150px;
         height:55px;
@@ -71,7 +88,15 @@
         
         margin-top:60px;
         margin-left:100px;
-        
+        background-color: #F64C72;
+        color:white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+    }
+    #shortened-url{
+        border-radius:25px;
+        padding-left: 10px;
+        border:none;
+        font-size:20px;
     }
 
 
@@ -110,12 +135,20 @@
     @media (min-width: 992px) {
 
         #URL{
-            width:80%;
-            margin-left: 100px;
+            width:40%;
+            margin-left: 400px;
         }
 
         #div2{
             font-size:30px;
             padding-left:300px;
             padding-right:none;
+        }
+
+        #desc{
+            font-size:35px;
+        }
+
+        #submit{
+            margin-left:630px;
         }
