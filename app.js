@@ -23,6 +23,8 @@ app.use(express.urlencoded({extended:false}))
 
 app.get('/', async(req, res)=>{
 
+    //const shortUrls = await shortUrl.findOne({full: req.body.URL})
+    
     const shortUrls = await shortUrl.find()
     res.render('index', {shortUrls: shortUrls})
 });
