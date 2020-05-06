@@ -48,7 +48,12 @@
       </form>
     </div>
     
-    
+    <div class="displayresults">
+
+        The shortened url is <% shortUrls.forEach(shortUrl => { %>
+             <a href="<%= shortUrl.short %>"> <%= shortUrl.short %> </a>%>
+        <% }) %>
+    </div>
 
 
     

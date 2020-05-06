@@ -23,17 +23,26 @@ app.use(express.urlencoded({extended:false}))
 
 app.get('/', async(req, res)=>{
 
-    //const shortUrls = await shortUrl.findOne({full: req.body.URL})
     
-    const shortUrls = await shortUrl.find()
-    res.render('index', {shortUrls: shortUrls})
+
+    
+   // const shortUrls = await shortUrl.find() // new chnages
+    //res.render('index', {shortUrls: shortUrls})
+    res.render('index');
 });
 
 app.post('/shortUrl', async (req,res)=>{
     await shortUrl.create({ full:req.body.URL})
 
-    res.redirect('/')
+   // res.redirect('/') b// new chagew
+   res.redirect('/res')
     
+})
+
+app.get('/res', async(req,res)=>{ //new changes
+
+    const shortUrls = await shortUrl.find({'full': req.body.URL})
+    res.render('res', {shortUrls: shortUrls});
 })
 
 app.get('/:ShortUrl', async (req, res)=>{
