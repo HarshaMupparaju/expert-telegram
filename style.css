@@ -14,7 +14,8 @@
     hr{
         border-top: 1px solid #F64C72;
         border-bottom: none;
-        width: 95%; 
+        width: 90%;
+        margin-left: 30px; 
     }
 
     h1{
@@ -23,7 +24,7 @@
         text-align: left;
         margin-top: 15px;
         margin-bottom: 15px;
-        margin-left:110px;
+        margin-left:80px;
         color: #F64C72;
         font-family: 'Lobster', cursive;
     }
@@ -37,10 +38,10 @@
     }
     p{
         font-family: 'Lobster', cursive;
-        font-size:60px;
+        font-size:40px;
         color: #99738E;
         margin-top: 25px;
-        margin-left: 30px;
+        margin-left: 20px;;
     }
     #desc{
         font-size: 30px;
@@ -74,6 +75,7 @@
         width:350px;
         border-radius: 30px;
         padding-left: 30px;
+        margin-left: -18px; 
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
     }
     #div2{
@@ -94,7 +96,7 @@
         font-size: 20px;
         
         margin-top:60px;
-        margin-left:100px;
+        margin-left:90px;
         background-color: #F64C72;
         color:white;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
@@ -113,7 +115,10 @@
         #desc{
             font-size:45px;
         }
-        
+        p{
+            font-size:50px;
+            margin-left:40px;
+        }
         
         #enter-url{
             font-size:30px;
@@ -121,7 +126,7 @@
 
         #URL{
             width:90%;
-            margin-left: 30px;
+            margin-left: 14px;
         }
 
         #div2{
@@ -134,7 +139,11 @@
         }
 
         #submit{
-            margin-left:40%;
+            margin-left:38%;
+        }
+
+        hr{
+            margin-left:50px;
         }
     }
     
