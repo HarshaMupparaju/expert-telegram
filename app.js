@@ -26,24 +26,20 @@ app.get('/', async(req, res)=>{
     
 
     
-   // const shortUrls = await shortUrl.find() // new chnages
-    //res.render('index', {shortUrls: shortUrls})
-    res.render('index');
+  const shortUrls = await shortUrl.find() // new chnages
+    res.render('index', {shortUrls: shortUrls})
+    
 });
 
 app.post('/shortUrl', async (req,res)=>{
     await shortUrl.create({ full:req.body.URL})
 
-   // res.redirect('/') b// new chagew
-   res.redirect('/res')
+   res.redirect('/') 
+   
     
 })
 
-app.get('/res', async(req,res)=>{ //new changes
 
-    const shortUrls = await shortUrl.find({'full': req.body.URL})
-    res.render('res', {shortUrls: shortUrls});
-})
 
 app.get('/:ShortUrl', async (req, res)=>{
 
