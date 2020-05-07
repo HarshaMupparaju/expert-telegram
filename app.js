@@ -1,6 +1,10 @@
 const express = require('express');
+const BodyParser = require("body-parser");
 const mongoose = require('mongoose')
 const app = express();
+app.use(BodyParser.json());
+app.use(BodyParser.urlencoded({ extend: true }));
+app.use(express.static('public'));
 
 const shortUrl = require('./models/shorturl')
 
@@ -26,7 +30,13 @@ app.get('/', async(req, res)=>{
     
 
     
-  const shortUrls = await shortUrl.find() // new chnages
+    //const shortUrls = await shortUrl.find()
+    const shortUrls = await shortUrl.find({})
+                            
+                                    .sort({"time":-1})
+                                    .limit(1)
+   // const shortUrls = await shortUrl.findOne({full: req.params.shortUrls}) 
+  
     res.render('index', {shortUrls: shortUrls})
     
 });
