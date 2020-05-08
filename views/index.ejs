@@ -57,9 +57,8 @@
     
     <div class="container">
     <div class="results">
-      Your shortened url is:
       <% shortUrls.forEach(shortUrl => { %>
-        <a href="<%= shortUrl.short %>"  <%= shortUrl.short %> </a>
+        <a href="<%= shortUrl.short %>" class="results-a"> <%= shortUrl.short %> </a>
         <% }) %>
 
     </div>

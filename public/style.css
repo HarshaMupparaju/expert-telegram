@@ -112,10 +112,12 @@
         color:white;
         width:60%;
         font-size: 25px;
+        padding-top: 10px;
     }
-    div > a{
+    .results-a{
         color:white;
         font-size:25px;
+        padding-top:10px;
     }
 
 
