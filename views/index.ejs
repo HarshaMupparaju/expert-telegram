@@ -57,9 +57,9 @@
     
     <div class="container">
     <div class="results">
-      www.shortener.com/
+      Your shortened url is:
       <% shortUrls.forEach(shortUrl => { %>
-        <a href="<%= shortUrl.short %>"> <%= shortUrl.short %> </a>
+        <a href="<%= shortUrl.short %>"  <%= shortUrl.short %> </a>
         <% }) %>
 
     </div>
