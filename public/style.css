@@ -108,6 +108,12 @@
         font-size:20px;
     }
 
+    #results{
+        color:white;
+        width:60%;
+        
+    }
+
 
 
     @media (min-width: 768px) {
