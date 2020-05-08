@@ -22,6 +22,7 @@ mongoose.connect('mongodb://localhost/urlShortener',{
     useNewUrlParser: true, useUnifiedTopology: true
 
 })
+
 app.set('view engine', 'ejs')
 app.use(express.urlencoded({extended:false}))
 
